@@ -1,0 +1,6 @@
+x = str("two2")
+y = str(5)
+z = str(6.3)
+print(x)
+print(y)
+print(z)

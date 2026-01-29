@@ -1,0 +1,6 @@
+x = int(3)
+y = int(2.23)
+z = int("11")
+print(x)
+print(y)
+print(z)
