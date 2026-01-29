@@ -1,0 +1,1 @@
+print("Hello, Python!") #This is a comment on the same line.
