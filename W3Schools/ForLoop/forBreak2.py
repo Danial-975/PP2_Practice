@@ -1,4 +1,4 @@
-for x in range(7):
+for x in range(8):
   if x == 5: break
   print(x)
 else:
