@@ -1,4 +1,4 @@
-Practice 1: Python Basics 🐍
+Practice 2: Python Control Flow Basics 🐍
 
 There are examples from W3Schools
 
@@ -6,22 +6,30 @@ There are examples from W3Schools
 
 Topics:
 
--HOME
+-Boolean Values
 
--Getting Started
+-Booleans as Comparison Results
 
--Syntax
+-Boolean Operators
 
--Output
+-If Statement
 
--Comments
+-If Else
 
--Variables
+-If Elif Else
 
--Data Types
+-Short Hand If Else
 
--Numbers
+-Switch/If Elif/Else
 
--Casting
+-While Loops
 
--Strings
+-While Loop Break
+
+-While Loop Continue
+
+-For Loops
+
+-For Loop Break
+
+-For Loop Continue
