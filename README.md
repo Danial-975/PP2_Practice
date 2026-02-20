@@ -1,4 +1,4 @@
-Practice 2: Python Control Flow Basics 🐍
+Practice 3: Python Functions and Object-Oriented Programming 🐍
 
 There are examples from W3Schools
 
@@ -6,30 +6,10 @@ There are examples from W3Schools
 
 Topics:
 
--Boolean Values
+-Functions
 
--Booleans as Comparison Results
+-Lambda Expressions
 
--Boolean Operators
+-Classes and Objects
 
--If Statement
-
--If Else
-
--If Elif Else
-
--Short Hand If Else
-
--Switch/If Elif/Else
-
--While Loops
-
--While Loop Break
-
--While Loop Continue
-
--For Loops
-
--For Loop Break
-
--For Loop Continue
+-Inheritance
