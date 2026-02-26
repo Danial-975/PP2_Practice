@@ -1,4 +1,4 @@
-Practice 3: Python Functions and Object-Oriented Programming 🐍
+Practice 4: Python Advanced Topics - Iterators, Dates, Math, and JSON 🐍
 
 There are examples from W3Schools
 
@@ -6,10 +6,10 @@ There are examples from W3Schools
 
 Topics:
 
--Functions
+-Iterators and Generators
 
--Lambda Expressions
+-Dates and Time
 
--Classes and Objects
+-Math
 
--Inheritance
+-JSON
