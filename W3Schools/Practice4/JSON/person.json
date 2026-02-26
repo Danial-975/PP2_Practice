@@ -1,0 +1,11 @@
+{
+  "name": "Jack Robertson",
+  "age": 30,
+  "city": "New York",
+  "is_student": false,
+  "hobbies": [
+    "football",
+    "books",
+    "traveling"
+  ]
+}
