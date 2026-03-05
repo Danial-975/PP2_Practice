@@ -1,4 +1,4 @@
-Practice 3: Python Functions and Object-Oriented Programming 🐍
+Practice 5: Python Regular Expressions (RegEx) 🐍
 
 There are examples from W3Schools
 
@@ -6,10 +6,4 @@ There are examples from W3Schools
 
 Topics:
 
--Functions
-
--Lambda Expressions
-
--Classes and Objects
-
--Inheritance
+-RegEx
