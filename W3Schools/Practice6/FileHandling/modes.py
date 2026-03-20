@@ -1,0 +1,5 @@
+f = open("demofile.txt")
+a = open("demofile.txt", "w")
+b = open("demofile.txt", "a")
+c = open("demofile.txt", "x")
+d = open("demofile.txt", "rb")
