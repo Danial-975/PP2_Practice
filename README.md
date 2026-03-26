@@ -1,4 +1,4 @@
-Practice 5: Python Regular Expressions (RegEx) 🐍
+Practice 6: Python File Handling and Built-in Functions 🐍
 
 There are examples from W3Schools
 
@@ -6,4 +6,8 @@ There are examples from W3Schools
 
 Topics:
 
--RegEx
+-File Handling
+
+-Directory Management
+
+-Built-in functions
