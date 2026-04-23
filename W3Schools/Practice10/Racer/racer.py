@@ -53,15 +53,19 @@ class Coin(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(40, SCREEN_WIDTH-40), 0)
 
-    def move(self):
+    def move(self, enemies_group):
         self.rect.move_ip(0, SPEED)
         if (self.rect.top > 600):
+            self.spawn(enemies_group)
+
+    def spawn(self, enemies_group):
+        collision = True
+        while collision:
             self.rect.top = 0
             self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), 0)
-
-    def spawn(self):
-        self.rect.top = 0
-        self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), 0)
+            
+            if not pygame.sprite.spritecollideany(self, enemies_group):
+                collision = False
             
         
 class Player(pygame.sprite.Sprite):
@@ -114,16 +118,19 @@ while True:
     coin_score = font_small.render(f"Coins: {COIN_SCORE}", True, BLACK)
     DISPLAYSURF.blit(scores, (10,10))
     DISPLAYSURF.blit(coin_score, (SCREEN_WIDTH - 110,10))
-    
+
     for entity in all_sprites:
         DISPLAYSURF.blit(entity.image, entity.rect)
-        entity.move()
-        
+        if isinstance(entity, Coin):
+            entity.move(enemies) 
+        else:
+            entity.move()
+
     if pygame.sprite.spritecollide(P1, coins, False):
         COIN_SCORE += 1
         coin_sound.play()
         for coin in coins:
-            coin.spawn()
+            coin.spawn(enemies)
     
     if pygame.sprite.spritecollideany(P1, enemies):
           pygame.mixer.Sound('sounds/crash.wav').play()
