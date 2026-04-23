@@ -1,4 +1,4 @@
-Practice 9: Game Development with Pygame - Part 1 🐍
+Practice 10: Game Development with Pygame - Part 2 🐍
 
 There are examples from W3Schools
 
@@ -6,14 +6,10 @@ There are examples from W3Schools
 
 Topics:
 
--Getting Started with Pygame
+-Racer
 
--Working with Images
+-Snake
 
--Music and Sound Effects
+-Paint
 
--Geometric Drawing
 
--Fonts and Text
-
--More on Input (Keyboard, Mouse, Joystick)
