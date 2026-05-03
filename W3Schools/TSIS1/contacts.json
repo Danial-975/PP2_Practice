@@ -1,0 +1,148 @@
+[
+    {
+        "name": "John Doe",
+        "email": "john@gmail.com",
+        "birthday": "1990-01-01",
+        "group_name": "Friend",
+        "phones": [
+            {
+                "id": 1,
+                "contact_id": 1,
+                "phone": "87012223344",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "name": "Jane Smith",
+        "email": "jane@work.com",
+        "birthday": "1985-05-12",
+        "group_name": "Work",
+        "phones": [
+            {
+                "id": 2,
+                "contact_id": 2,
+                "phone": "87172556677",
+                "type": "work"
+            }
+        ]
+    },
+    {
+        "name": "Mom",
+        "email": "mom@home.com",
+        "birthday": "1967-05-10",
+        "group_name": "Family",
+        "phones": [
+            {
+                "id": 3,
+                "contact_id": 3,
+                "phone": "87272112233",
+                "type": "home"
+            },
+            {
+                "id": 11,
+                "contact_id": 3,
+                "phone": "87029690033",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "name": "Alice Johnson",
+        "email": "alice.j@outlook.com",
+        "birthday": "1992-03-15",
+        "group_name": "Friend",
+        "phones": [
+            {
+                "id": 4,
+                "contact_id": 4,
+                "phone": "87009998877",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "name": "Robert Brown",
+        "email": "robert.b@company.kz",
+        "birthday": "1988-07-22",
+        "group_name": "Work",
+        "phones": [
+            {
+                "id": 5,
+                "contact_id": 5,
+                "phone": "87172112233",
+                "type": "work"
+            }
+        ]
+    },
+    {
+        "name": "Daulet Muratov",
+        "email": "daulet.m@mail.ru",
+        "birthday": "1995-12-01",
+        "group_name": "Other",
+        "phones": [
+            {
+                "id": 6,
+                "contact_id": 6,
+                "phone": "87023334455",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "name": "Elena Ivanova",
+        "email": "elena.v@gmail.com",
+        "birthday": "1991-09-10",
+        "group_name": "Friend",
+        "phones": [
+            {
+                "id": 7,
+                "contact_id": 7,
+                "phone": "87075556677",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "name": "Sanzhar Bolatov",
+        "email": "sanzhar@university.edu",
+        "birthday": "2003-02-28",
+        "group_name": "Other",
+        "phones": [
+            {
+                "id": 8,
+                "contact_id": 8,
+                "phone": "87778889900",
+                "type": "home"
+            }
+        ]
+    },
+    {
+        "name": "Tech Support",
+        "email": "support@provider.kz",
+        "birthday": "2000-01-01",
+        "group_name": "Work",
+        "phones": [
+            {
+                "id": 9,
+                "contact_id": 9,
+                "phone": "88000801122",
+                "type": "work"
+            }
+        ]
+    },
+    {
+        "name": "Sister",
+        "email": "sis@gmail.com",
+        "birthday": "1998-06-05",
+        "group_name": "Family",
+        "phones": [
+            {
+                "id": 10,
+                "contact_id": 10,
+                "phone": "87051112233",
+                "type": "mobile"
+            }
+        ]
+    }
+]

@@ -1,0 +1,11 @@
+name,email,birthday,group,phone,type
+John Doe,john@gmail.com,1990-01-01,Friend,87012223344,mobile
+Jane Smith,jane@work.com,1985-05-12,Work,87172556677,work
+Mom,mom@home.com,1967-05-10,Family,87272112233,home
+Alice Johnson,alice.j@outlook.com,1992-03-15,Friend,87009998877,mobile
+Robert Brown,robert.b@company.kz,1988-07-22,Work,87172112233,work
+Daulet Muratov,daulet.m@mail.ru,1995-12-01,Other,87023334455,mobile
+Elena Ivanova,elena.v@gmail.com,1991-09-10,Friend,87075556677,mobile
+Sanzhar Bolatov,sanzhar@university.edu,2003-02-28,Other,87778889900,home
+Tech Support,support@provider.kz,2000-01-01,Work,88000801122,work
+Sister,sis@gmail.com,1998-06-05,Family,87051112233,mobile
