@@ -25,6 +25,7 @@ game_over = font.render("Game Over", True, BLACK)
 
 background = pygame.image.load("images/street.png")
 coin_sound = pygame.mixer.Sound('sounds/coin.wav')
+crash_sound = pygame.mixer.Sound('sounds/crash.wav')
 
 DISPLAYSURF = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 DISPLAYSURF.fill(WHITE)
@@ -34,17 +35,23 @@ class Enemy(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
         self.image = pygame.image.load("images/enemy.png")
-        self.rect = self.image.get_rect()
-        self.rect.center = (random.randint(40, SCREEN_WIDTH-40), 0)
-        
-    def move(self):
+        self.rect = self.image.get_rect() 
+        self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), 0)
+
+    def spawn(self, coins_group):
+        collision = True
+        while collision:
+            self.rect.center = (random.randint(40, SCREEN_WIDTH - 40), 0)
+            self.rect.top = 0
+            if not pygame.sprite.spritecollideany(self, coins_group):
+                collision = False
+
+    def move(self, coins_group):
         global SCORE
-        self.rect.move_ip(0,SPEED)
+        self.rect.move_ip(0, SPEED)
         if (self.rect.top > 600):
             SCORE += 1
-            self.rect.top = 0
-            self.rect.center = (random.randint(40, SCREEN_WIDTH -40), 0)
-
+            self.spawn(coins_group)
 
 class Coin(pygame.sprite.Sprite):
     def __init__(self):
@@ -86,17 +93,17 @@ class Player(pygame.sprite.Sprite):
             if pressed_keys[K_RIGHT]:
                 self.rect.move_ip(5, 0)
 
+enemies = pygame.sprite.Group()
+coins = pygame.sprite.Group()
+all_sprites = pygame.sprite.Group()
+
 P1 = Player()
 E1 = Enemy()
 C1 = Coin()
 
-enemies = pygame.sprite.Group()
+
 enemies.add(E1)
-
-coins = pygame.sprite.Group()
 coins.add(C1)
-
-all_sprites = pygame.sprite.Group()
 all_sprites.add(P1)
 all_sprites.add(E1)
 all_sprites.add(C1)
@@ -123,6 +130,8 @@ while True:
         DISPLAYSURF.blit(entity.image, entity.rect)
         if isinstance(entity, Coin):
             entity.move(enemies) 
+        elif isinstance(entity, Enemy):
+            entity.move(coins) 
         else:
             entity.move()
 
@@ -133,7 +142,7 @@ while True:
             coin.spawn(enemies)
     
     if pygame.sprite.spritecollideany(P1, enemies):
-          pygame.mixer.Sound('sounds/crash.wav').play()
+          crash_sound.play()
           time.sleep(0.5)
                     
           DISPLAYSURF.fill(RED)
